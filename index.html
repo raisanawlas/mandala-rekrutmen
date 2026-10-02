@@ -98,19 +98,19 @@ footer{text-align:center;color:var(--mute);font-size:.88rem;padding:26px;border-
 <script>
 /* ====== KONFIGURASI: ganti data placeholder di sini ====== */
 const INFO={
-  sejarah:"Mandala Policy Consulting berdiri pada [TAHUN] di [KOTA] dengan keyakinan bahwa kebijakan yang baik lahir dari data yang kuat dan pemahaman mendalam atas realitas daerah.",
+  sejarah:"Mandala Policy Consulting berdiri pada [2011] di [Surabaya] dengan keyakinan bahwa kebijakan yang baik lahir dari pemahaman mendalam atas realitas daerah berbasis data.",
   latar:"Kami bermitra dengan pemerintah daerah dalam kajian kebijakan, evaluasi program, dan reformasi birokrasi, dengan mengandalkan presisi metodologis, pemahaman regulasi, dan kapasitas advokasi para analis kami.",
-  alamat:"[Alamat lengkap kantor Mandala Policy Consulting]",
+  alamat:"[Jl Kertajaya Indah Raya No 88]",
   email:"rekrutmen@mandala-policy.example",
   telp:"+62 000 0000 0000"
 };
 const SLOTS=["Senin, 12 Oktober 2026, 09.00 WIB","Senin, 12 Oktober 2026, 13.00 WIB","Selasa, 13 Oktober 2026, 09.00 WIB","Rabu, 14 Oktober 2026, 10.00 WIB","Kamis, 15 Oktober 2026, 14.00 WIB"];
 const JOBS={
  junior:{nama:"Analis Junior",butuh:8,
-  kual:["S1/S2 Ilmu Pemerintahan, Kebijakan Publik, Administrasi Publik, Ekonomi Pembangunan, atau Hukum dari perguruan tinggi terakreditasi","Memahami metodologi riset kuantitatif dan kualitatif serta analisis data sekunder","Mampu menulis tulisan ilmiah dan narasi kebijakan yang runtut","Nilai tambah: portofolio policy brief, kemampuan R/Python/GIS, pengalaman riset atau magang konsultansi"],
+  kual:["S1/S2 Ilmu Pemerintahan, Kebijakan Publik, Administrasi Publik, Ekonomi Pembangunan, atau Hukum dari perguruan tinggi terakreditasi","Memahami metodologi riset serta analisis data sekunder","Mampu menulis kajian ilmiah dan narasi kebijakan yang runtut","Nilai tambah: portofolio, kemampuan R/Python/GIS, pengalaman riset atau magang dalam ranah yang relevan"],
   jobdesc:["Mengidentifikasi masalah dan mengumpulkan data kebijakan","Membersihkan, menganalisis, dan memvisualisasikan data","Menyusun alternatif kebijakan dan draf policy brief","Mendukung tim dalam riset lapangan dan evaluasi program Pemda"]},
  senior:{nama:"Analis Senior",butuh:4,
-  kual:["S1/S2 bidang relevan dari perguruan tinggi terakreditasi, pengalaman minimal 4 tahun di analisis kebijakan atau konsultansi sektor publik","Pengalaman memimpin tim riset dan mengelola proyek kebijakan","Menguasai regulasi reformasi birokrasi (PermenPAN-RB, SAKIP, RB Tematik)","Nilai tambah: pengalaman advokasi dan fasilitasi public hearing, penyusunan Naskah Akademik/Ranperda, penyusunan proposal tender"],
+  kual:["S1/S2 bidang relevan dari perguruan tinggi terakreditasi, pengalaman minimal 4 tahun sebagai analis kebijakan ataupun dalam ranah yang relevan","Pengalaman memimpin tim riset dan mengelola proyek kebijakan","Menguasai regulasi reformasi birokrasi (PermenPAN-RB, SAKIP, RB Tematik)","Nilai tambah: pengalaman advokasi dan fasilitasi public hearing, penyusunan Naskah Akademik/Ranperda, penyusunan proposal tender"],
   jobdesc:["Memimpin proyek konsultansi kebijakan dan evaluasi di pemerintah daerah","Mengelola timeline, kualitas, dan deliverables tim riset","Memfasilitasi konsultasi publik dan negosiasi dengan pemangku kepentingan","Menyusun Naskah Akademik, rekomendasi strategis, dan proposal teknis"]}
 };
 const STAGES=["Lamaran diterima","Screening administrasi","Tes kognitif & simulasi policy brief","Penilaian & Focus Group Discussion","Hasil akhir"];
@@ -155,11 +155,11 @@ tes:()=>`<h2 class="pg">Tes Kognitif & Simulasi Policy Brief</h2><div class="car
 
 const W=[["Evaluasi berkas & kualifikasi",.10],["Tes kognitif adaptif",.10],["Simulasi policy brief",.35],["Focus Group Discussion",.20],["Wawancara BEI",.25]];
 const DUM={
-"MPC-LOLOS01":{nama:"Raka Pratama",posisi:"junior",ok:true,s:[88,85,90,84,87],rank:"3 dari 8 posisi penawaran",pers:92,tgl:"Kamis, 1 Oktober 2026",sang:"Selasa, 6 Oktober 2026",
- cat:["Policy brief: analisis data bersih dan rekomendasi realistis bagi Pemda.","FGD: argumen berbasis data, kolaboratif, dan mampu menjembatani perbedaan pendapat.","Wawancara BEI: contoh STAR konkret dan komitmen etis yang kuat."]},
-"MPC-GAGAL01":{nama:"Dina Lestari",posisi:"junior",ok:false,s:[82,70,68,75,78],rank:"14 dari 40 kandidat",pers:65,tgl:"Rabu, 30 September 2026",sang:"Senin, 5 Oktober 2026",
+"MPC-LOLOS01":{nama:"Karina Alaydrus",posisi:"junior",ok:true,s:[88,85,90,84,87],rank:"3 dari 8 posisi penawaran",pers:92,tgl:"Kamis, 1 Oktober 2026",sang:"Selasa, 6 Oktober 2026",
+ cat:["Policy brief: analisis data bersih dan rekomendasi realistis bagi Pemda.","FGD: argumen berbasis data, kolaboratif, dan mampu menjembatani perbedaan pendapat.","Wawancara BEI: contoh STAR konkret dan memiliki komitmen yang kuat."]},
+"MPC-GAGAL01":{nama:"Nizar Baharun",posisi:"junior",ok:false,s:[82,70,68,75,78],rank:"14 dari 40 kandidat",pers:65,tgl:"Rabu, 30 September 2026",sang:"Senin, 5 Oktober 2026",
  cat:["Policy brief: struktur runtut, namun rekomendasi belum didukung data yang cukup kuat.","Tes kognitif: penalaran kuantitatif masih di bawah rata-rata peserta.","FGD dan wawancara: komunikasi baik, perlu lebih tegas mempertahankan argumen berbasis data."]}};
-function ret(o){return o?`<p class="ok"><b>Talent Pool aktif (opt-in).</b> Dokumen dan identitas Anda tetap tersimpan terenkripsi paling lama 2 tahun, yaitu sampai 30 September 2028. Setelah itu sistem menghapusnya secara otomatis.</p>`:`<p><b>Tanpa persetujuan Talent Pool.</b> Pada <b>30 Oktober 2026</b> sistem menjalankan pembersihan otomatis: seluruh berkas (CV, portofolio, ijazah) dihapus dari penyimpanan, dan nama, NIK, serta email dianonimkan di basis data.</p>`}
+function ret(o){return o?`<p class="ok"><b>Talent Pool aktif (opt-in).</b> Dokumen identitas Anda tetap tersimpan terenkripsi paling lama 2 tahun, yaitu hingga 30 September 2028. Setelah itu sistem akan menghapusnya secara otomatis.</p>`:`<p><b>Tanpa persetujuan Talent Pool.</b> Pada <b>30 Oktober 2026</b> sistem menjalankan pembersihan otomatis: seluruh berkas (CV, portofolio, ijazah) dihapus dari penyimpanan, dan nama, NIK, serta email dianonimkan di basis data.</p>`}
 function dv(d){
  const tot=d.s.reduce((t,v,i)=>t+v*W[i][1],0),p=JOBS[d.posisi];
  const st=STAGES.map((x,i)=>`<li class="${i<4?"done":d.ok?"done":"fail"}">${x}</li>`).join("");
